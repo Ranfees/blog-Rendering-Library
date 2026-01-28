@@ -1,8 +1,9 @@
-const body = document.body;
-body.style.backgroundColor = "#f0f2f5"; 
-body.style.margin = "0"; 
+// const body = document.body;
+// body.style.backgroundColor = "#f0f2f5"; 
+// body.style.margin = "0"; 
 
-const canvas = document.createElement('div');
+// const canvas = document.createElement('div');
+const canvas = document.getElementById('canvas');
 
 Object.assign(canvas.style, {
     // Layout & Positioning
@@ -25,7 +26,7 @@ Object.assign(canvas.style, {
     boxSizing: "border-box"       
 });
 
-body.append(canvas);
+// body.append(canvas);
 
 const now = new Date();
 const dateStr = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });

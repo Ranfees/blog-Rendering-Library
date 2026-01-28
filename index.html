@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-
-    
-
+    <div id="canvas"></div>
 </body>
 <script src="./library.js"></script>
 <script>
     const params = new URLSearchParams(window.location.search);
+    console.log(window.location.search)
+    console.log(params)
     const slug = params.get('slug');
     if (slug) {
         generateBlog(slug);
